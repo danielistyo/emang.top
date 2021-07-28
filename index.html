@@ -3,12 +3,19 @@
   <meta name="google-site-verification" content="GKUgep34Apuilnqu6aq9RYQVE2WU_Tf9gPikk-ayXJQ" />
 </head>
 <body>
-mantap
   <script>
     if(location.hostname === 'inp.emang.top') {
       location.href = 'http://newnormal.rungkut.gkjw.or.id/ibadah/register';
     } else if(location.hostname === 'pemuda-peduli.emang.top') {
       location.href = 'https://docs.google.com/spreadsheets/d/1S9kdXFXGXN-7NntS78BdvbvYQuHanjuaQHY8Pbwk_i8/edit#gid=0';
+    } else if(location.hostname === 'localstorage.emang.top') {
+      try{
+        localStorage.setItem('mantap', 'mantap');
+        localStorage.getItem('mantap');
+        document.write('mantap support localstorage')
+      } catch () {
+        document.write('gak support localstorage bos')
+      }
     }
   </script>
 </body>
